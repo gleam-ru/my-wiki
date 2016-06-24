@@ -12,9 +12,9 @@ var app = new Hazel(config, StorageProvider);
 var server = app.server;
     console.log("I AM TEST 6");
 
-var PORT = 5000;
+var PORT = process.env.PORT || 3000;
 server.listen(PORT, function() {
     console.log("I AM TEST 7");
-    console.log("✔ Hazel server listening at 3000 ");
+    console.log("✔ Hazel server listening at ${ PORT } ");
     console.log(`Listening on ${ PORT }`);
 });
