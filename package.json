@@ -2,7 +2,7 @@
   "name": "my-wiki",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "hazel-wiki": "^1.0.7"
+  },
+  "private": true,
+  "scripts": {
+    "preinstall": "node -v & npm -v",
+    "start": "node app.js",
+    "debug": "node debug app.js"
   }
 }
